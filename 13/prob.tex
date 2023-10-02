@@ -217,6 +217,28 @@ Find the probability of getting 5 twice in 7 throws of a dice.\\
 	\caption{Random variable and Parameter}
 	\label{tab:gausstab2_9.3.3}
 \end{table}
+\begin{enumerate}
+   \item{ \em{Binomial Distribution :}}\\The $X$ is the random variable, the pmf of $X$ is given by
+    \begin{align}
+p_X(k)&=\comb{n}{k}p^k(1-p)^{n-k}
+\end{align}    
+  We require $\Pr(X = 2)$. Since $n = 7$,
+             \begin{align}
+                p_X\brak{2} &= 0.234
+             \end{align}
+             
+             \item{ \em{Gaussian Distribution}}\\
+             Let Y be gaussian variable. Using central limit theorem, we can use the gaussian distribution function:
+\begin{align}
+p_Y\brak{x} &= \frac{1}{\sqrt{2\pi{\sigma}^2}} e^{-\frac{\brak{x-\mu}^2}{2{\sigma}^2}}\label{9.3.21.a} \qquad \brak{x \in Y}
+\end{align}
+Using Normal distribution at X=2,
+\begin{align}
+p_Y\brak{2} &= \frac{1}{\sqrt{2\pi \brak{\frac{35}{36}}}} e^{-\frac{\brak{2-\frac{7}{6}}^2}{2 \brak{\frac{35}{36}}}}\label{9.3.21.b} \\
+&= \frac{1}{\sqrt{2\pi \brak{\frac{35}{36}}}} e^{-\frac{5}{14}}\\
+&=0.283
+\end{align}
+\item {\em{Using Q function:}}\\
 let $Y$ be a gaussian Random variable
 \begin{align}
 	Y &\sim N\brak{\mu,\sigma}\\
@@ -256,7 +278,7 @@ Then probability in terms of Q funtion is
 	\caption{Binomial and gaussian distribution}
 	\label{fig:gauss9.3.3}
 \end{figure}
-
+\end{enumerate}
 \end{document}
 
 
